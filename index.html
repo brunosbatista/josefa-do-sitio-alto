@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="/assets/script.js"></script>
     <title>Josefa do Sitio Alto</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo">
+            <!--img src="logo.png" alt="Logo"-->
+            <span>Josefa do Sitio Alto</span>
+        </div>
+        <input type="checkbox"  id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="#historia" style="--i:0;">História</a>
+            <a href="#conquistas" style="--i:1;">Coquistas</a>
+            <a href="#noticias" style="--i:2;">Noticias</a>
+            <a href="#contato" style="--i:3;">Contato</a>
+            <a href="#" style="--i:4;" class="cta-button">Vamos lá!</a>
+        </nav>
+    </header>
     <section class="capa">
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <!--img src="logo.png" alt="Logo"-->
-                    <span>Josefa do Sitio Alto</span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#historia">História</a></li>
-                    <li><a href="#conquistas">Coquistas</a></li>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <a href="#" class="cta-button">Vamos lá!</a>
-            </nav>
-        </header>
         <video class="video-bg" autoplay muted loop>
             <source src="/assets/video/Essa é minha Arte - Dona Josefa.mp4" type="video/mp4">
             Seu navegador não suporta vídeos.
@@ -48,8 +54,21 @@
 
             </div>
             <div class="flex historia-conteudo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at velit viverra, fermentum sapien nec, interdum purus. Nullam feugiat ligula vitae orci fermentum, vel congue tortor fringilla. Integer feugiat placerat ex, vel ultricies ipsum aliquam non. Nam quis velit vitae lorem malesuada porttitor ac a mi. Curabitur bibendum sapien velit, vitae fringilla ligula hendrerit et. Aliquam erat volutpat. Cras rutrum posuere libero, in tincidunt nulla vehicula vitae. In vehicula auctor lectus, vel malesuada purus malesuada at. Aliquam euismod diam ut magna sodales efficitur. Donec nec dolor felis. Vestibulum convallis velit eget justo ullamcorper condimentum. Cras nec lobortis velit. Mauris condimentum lacus non ligula vehicula tincidunt. Nulla ac turpis vel metus iaculis scelerisque vel eget turpis.</p>
-                <p>Aliquam in est vel velit fringilla sollicitudin. Nulla id nisi et ipsum tristique pharetra. Nam auctor est non diam blandit sodales. Integer a vehicula odio. Etiam venenatis augue ut fringilla tincidunt. Nulla facilisi. Ut ultricies velit et purus sodales rutrum. Vestibulum facilisis neque a justo varius, at efficitur erat vulputate. Nullam gravida felis at sapien interdum, sed fermentum urna interdum. Nam volutpat tempor justo. Donec vehicula nisl eu mi aliquet auctor. Fusce id erat libero. Curabitur bibendum nunc in lorem gravida, at viverra nisl viverra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at velit viverra, fermentum sapien
+                    nec, interdum purus. Nullam feugiat ligula vitae orci fermentum, vel congue tortor fringilla.
+                    Integer feugiat placerat ex, vel ultricies ipsum aliquam non. Nam quis velit vitae lorem malesuada
+                    porttitor ac a mi. Curabitur bibendum sapien velit, vitae fringilla ligula hendrerit et. Aliquam
+                    erat volutpat. Cras rutrum posuere libero, in tincidunt nulla vehicula vitae. In vehicula auctor
+                    lectus, vel malesuada purus malesuada at. Aliquam euismod diam ut magna sodales efficitur. Donec nec
+                    dolor felis. Vestibulum convallis velit eget justo ullamcorper condimentum. Cras nec lobortis velit.
+                    Mauris condimentum lacus non ligula vehicula tincidunt. Nulla ac turpis vel metus iaculis
+                    scelerisque vel eget turpis.</p>
+                <p>Aliquam in est vel velit fringilla sollicitudin. Nulla id nisi et ipsum tristique pharetra. Nam
+                    auctor est non diam blandit sodales. Integer a vehicula odio. Etiam venenatis augue ut fringilla
+                    tincidunt. Nulla facilisi. Ut ultricies velit et purus sodales rutrum. Vestibulum facilisis neque a
+                    justo varius, at efficitur erat vulputate. Nullam gravida felis at sapien interdum, sed fermentum
+                    urna interdum. Nam volutpat tempor justo. Donec vehicula nisl eu mi aliquet auctor. Fusce id erat
+                    libero. Curabitur bibendum nunc in lorem gravida, at viverra nisl viverra.</p>
             </div>
         </div>
     </section>
@@ -91,12 +110,26 @@
         <div class="sementes-crioulas">
             <div class="sementes-crioulas-historia">
                 <h1>Guardiã de <span>Sementes Crioulas</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at velit viverra, fermentum sapien nec, interdum purus. Nullam feugiat ligula vitae orci fermentum, vel congue tortor fringilla. Integer feugiat placerat ex, vel ultricies ipsum aliquam non. Nam quis velit vitae lorem malesuada porttitor ac a mi. Curabitur bibendum sapien velit, vitae fringilla ligula hendrerit et. Aliquam erat volutpat. Cras rutrum posuere libero, in tincidunt nulla vehicula vitae. In vehicula auctor lectus, vel malesuada purus malesuada at. Aliquam euismod diam ut magna sodales efficitur. Donec nec dolor felis. Vestibulum convallis velit eget justo ullamcorper condimentum. Cras nec lobortis velit. Mauris condimentum lacus non ligula vehicula tincidunt. Nulla ac turpis vel metus iaculis scelerisque vel eget turpis.</p>
-                <p>Aliquam in est vel velit fringilla sollicitudin. Nulla id nisi et ipsum tristique pharetra. Nam auctor est non diam blandit sodales. Integer a vehicula odio. Etiam venenatis augue ut fringilla tincidunt. Nulla facilisi. Ut ultricies velit et purus sodales rutrum. Vestibulum facilisis neque a justo varius, at efficitur erat vulputate. Nullam gravida felis at sapien interdum, sed fermentum urna interdum. Nam volutpat tempor justo. Donec vehicula nisl eu mi aliquet auctor. Fusce id erat libero. Curabitur bibendum nunc in lorem gravida, at viverra nisl viverra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at velit viverra, fermentum sapien
+                    nec, interdum purus. Nullam feugiat ligula vitae orci fermentum, vel congue tortor fringilla.
+                    Integer feugiat placerat ex, vel ultricies ipsum aliquam non. Nam quis velit vitae lorem malesuada
+                    porttitor ac a mi. Curabitur bibendum sapien velit, vitae fringilla ligula hendrerit et. Aliquam
+                    erat volutpat. Cras rutrum posuere libero, in tincidunt nulla vehicula vitae. In vehicula auctor
+                    lectus, vel malesuada purus malesuada at. Aliquam euismod diam ut magna sodales efficitur. Donec nec
+                    dolor felis. Vestibulum convallis velit eget justo ullamcorper condimentum. Cras nec lobortis velit.
+                    Mauris condimentum lacus non ligula vehicula tincidunt. Nulla ac turpis vel metus iaculis
+                    scelerisque vel eget turpis.</p>
+                <p>Aliquam in est vel velit fringilla sollicitudin. Nulla id nisi et ipsum tristique pharetra. Nam
+                    auctor est non diam blandit sodales. Integer a vehicula odio. Etiam venenatis augue ut fringilla
+                    tincidunt. Nulla facilisi. Ut ultricies velit et purus sodales rutrum. Vestibulum facilisis neque a
+                    justo varius, at efficitur erat vulputate. Nullam gravida felis at sapien interdum, sed fermentum
+                    urna interdum. Nam volutpat tempor justo. Donec vehicula nisl eu mi aliquet auctor. Fusce id erat
+                    libero. Curabitur bibendum nunc in lorem gravida, at viverra nisl viverra.</p>
             </div>
             <div class="sementes-crioulas-imagem">
                 <!-- Colocando uma imagem circular com ondas -->
-                <img src="/assets/images/WhatsApp-Image-2021-09-10-at-17.32.20.jpeg" alt="Circular Image" class="circular-imagem">
+                <img src="/assets/images/WhatsApp-Image-2021-09-10-at-17.32.20.jpeg" alt="Circular Image"
+                    class="circular-imagem">
             </div>
         </div>
     </section>
@@ -125,12 +158,26 @@
         <div class="danca-de-roda">
             <div class="danca-de-roda-historia">
                 <h1>Mestra do grupo <span>Dança de Roda</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at velit viverra, fermentum sapien nec, interdum purus. Nullam feugiat ligula vitae orci fermentum, vel congue tortor fringilla. Integer feugiat placerat ex, vel ultricies ipsum aliquam non. Nam quis velit vitae lorem malesuada porttitor ac a mi. Curabitur bibendum sapien velit, vitae fringilla ligula hendrerit et. Aliquam erat volutpat. Cras rutrum posuere libero, in tincidunt nulla vehicula vitae. In vehicula auctor lectus, vel malesuada purus malesuada at. Aliquam euismod diam ut magna sodales efficitur. Donec nec dolor felis. Vestibulum convallis velit eget justo ullamcorper condimentum. Cras nec lobortis velit. Mauris condimentum lacus non ligula vehicula tincidunt. Nulla ac turpis vel metus iaculis scelerisque vel eget turpis.</p>
-                <p>Aliquam in est vel velit fringilla sollicitudin. Nulla id nisi et ipsum tristique pharetra. Nam auctor est non diam blandit sodales. Integer a vehicula odio. Etiam venenatis augue ut fringilla tincidunt. Nulla facilisi. Ut ultricies velit et purus sodales rutrum. Vestibulum facilisis neque a justo varius, at efficitur erat vulputate. Nullam gravida felis at sapien interdum, sed fermentum urna interdum. Nam volutpat tempor justo. Donec vehicula nisl eu mi aliquet auctor. Fusce id erat libero. Curabitur bibendum nunc in lorem gravida, at viverra nisl viverra.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at velit viverra, fermentum sapien
+                    nec, interdum purus. Nullam feugiat ligula vitae orci fermentum, vel congue tortor fringilla.
+                    Integer feugiat placerat ex, vel ultricies ipsum aliquam non. Nam quis velit vitae lorem malesuada
+                    porttitor ac a mi. Curabitur bibendum sapien velit, vitae fringilla ligula hendrerit et. Aliquam
+                    erat volutpat. Cras rutrum posuere libero, in tincidunt nulla vehicula vitae. In vehicula auctor
+                    lectus, vel malesuada purus malesuada at. Aliquam euismod diam ut magna sodales efficitur. Donec nec
+                    dolor felis. Vestibulum convallis velit eget justo ullamcorper condimentum. Cras nec lobortis velit.
+                    Mauris condimentum lacus non ligula vehicula tincidunt. Nulla ac turpis vel metus iaculis
+                    scelerisque vel eget turpis.</p>
+                <p>Aliquam in est vel velit fringilla sollicitudin. Nulla id nisi et ipsum tristique pharetra. Nam
+                    auctor est non diam blandit sodales. Integer a vehicula odio. Etiam venenatis augue ut fringilla
+                    tincidunt. Nulla facilisi. Ut ultricies velit et purus sodales rutrum. Vestibulum facilisis neque a
+                    justo varius, at efficitur erat vulputate. Nullam gravida felis at sapien interdum, sed fermentum
+                    urna interdum. Nam volutpat tempor justo. Donec vehicula nisl eu mi aliquet auctor. Fusce id erat
+                    libero. Curabitur bibendum nunc in lorem gravida, at viverra nisl viverra.</p>
             </div>
             <div class="danca-de-roda-imagem">
                 <!-- Colocando uma imagem circular com ondas -->
-                <img src="/assets/images/WhatsApp-Image-2021-09-10-at-17.32.20.jpeg" alt="Circular Image" class="circular-imagem">
+                <img src="/assets/images/WhatsApp-Image-2021-09-10-at-17.32.20.jpeg" alt="Circular Image"
+                    class="circular-imagem">
             </div>
         </div>
     </section>
@@ -213,4 +260,5 @@
         </div>
     </section>
 </body>
+
 </html>
