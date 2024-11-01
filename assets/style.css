@@ -1,0 +1,498 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "arial", "verdana", "sans-serif";
+    scroll-behavior: smooth;
+}
+.capa {
+    padding-top: 120px;
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+header .navbar.header-scrolled {
+    background-color: #fff !important;
+}
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    z-index: 1;
+    color: white;
+    text-align: left;
+
+    & h1 {
+        font-size: 50px;
+        line-height: 0;
+    }
+    & p {
+        font-size: 20px;
+    }
+    & .content-btn  {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 100px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & .content-btn a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    & .content-btn a:visited {
+        color: white;
+    }
+    & .content-btn:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Adiciona posição fixa */
+    width: calc(100% - 60px); /* Para evitar que o header ultrapasse os limites da página */
+    top: 0; /* Mantém o header no topo */
+    z-index: 10; /* Para garantir que ele fique acima de outros elementos */
+}
+.logo {
+    display: flex;
+    align-items: center;
+
+    & img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    & span {
+        font-size: 20px;
+        font-weight: bold;
+        color: green;
+    }
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+
+    & li {
+        margin: 0 15px;
+    }
+    & a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #333;
+    }
+}
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.cta-button:hover {
+    background-color: #45a049;
+}
+.historia {
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: #ffff;
+
+    & .historia-titulo {
+        font-size: 20px;
+        text-align: center;
+        
+        & span {
+            color: green;
+            font-size: 40px;
+        }
+        & h1 {
+            line-height: 0;
+        }
+        & img {
+            width: 400px;
+            height: auto;
+            border-radius: 100%;
+            transition: transform 0.3s ease;
+        }
+    }
+    & .historia-conteudo {
+        color: #333;
+        line-height: 1.8;
+        font-size: 14px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+}
+.flex {
+    flex: 1;
+}
+.conquistas {
+    background-color: green;
+    color: #fff;
+    padding: 30px;
+
+    & h1 {
+        font-size: 30px;
+    }
+    & .conquistas-titulo {
+        text-align: center;
+        padding-top: 10px;
+    }
+    & .container-conquistas {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    & .card {
+        max-width: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+    & .card img {
+        max-width: 100%;
+        height: 150px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    & .card h3 {
+        margin: 15px 0 10px;
+        font-size: 1.5em;
+    }
+    & .card p {
+        font-size: 1em;
+    }
+}
+.sementes-crioulas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 10px;
+
+    & .sementes-crioulas-historia {
+        width: 65%;
+        line-height: 1.8;
+        font-size: 14px;
+        color: #333;
+        padding-right: 20px;
+        text-align: justify;
+    }
+    & span {
+        color: green;
+    }
+    & .sementes-crioulas-imagem {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & .circular-imagem {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        animation: wave 3s infinite ease-in-out;
+    }
+}
+.video-container {
+    background-color: green;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    & iframe {
+        width: 350px;
+        height: 200px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+    & h1 {
+        font-size: 30px;
+        line-height: 70px;
+    }
+    & .content-btn-youtube {
+        background-color: #fff;
+        border: 2px solid green;
+        color: #ffffff;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 150px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    & .content-btn-youtube a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    & .content-btn-youtube a:visited {
+        color: green;
+    }
+    & .content-btn-youtube:hover {
+        background-color: greenyellow;
+        color: #ffffff;
+    }
+}
+.danca-de-roda {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 10px;
+
+    & .danca-de-roda-historia {
+        width: 65%;
+        line-height: 1.8;
+        font-size: 14px;
+        color: #333;
+        padding-right: 20px;
+        text-align: justify;
+    }
+    & span {
+        color: green;
+    }
+    & .danca-de-roda-imagem {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & .circular-imagem {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        animation: wave 3s infinite ease-in-out;
+    }
+}
+
+.noticias {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    & span {
+        color: green;
+    }
+}
+
+
+.wg1{
+    grid-column: span 1;
+}
+.wg2{
+    grid-column: span 2;
+}
+.hg1{
+    grid-row: span 1;
+}
+.hg2{
+    grid-row: span 2;
+}
+
+div.galeria {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 45vh;
+}
+
+div.single-galeria{
+    margin: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+div.img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+div.img img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+div.overflow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(transparent, black);
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+div.conteudo{
+    position: absolute;
+    color: white;
+    border-left: 3px solid white;
+    padding: 0 10px;
+    bottom: 10px;
+    left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+div.conteudo h1{
+    font-size: 30px;
+}
+
+div.conteudo p{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+div.single-galeria:hover div.overflow{
+    opacity: 1;
+}
+div.single-galeria:hover div.conteudo{
+    bottom: 20px;
+}
+
+.contatos {
+
+    & h1 {
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    & span {
+        color: green;
+    }
+    .forms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        & .form-group {
+            display: flex;
+            justify-content: space-between;
+    
+            & input {
+                margin: 5px;
+            }
+        }
+    }
+    & .form-container {
+        padding: 20px;
+        max-width: 90%;
+        min-width: 50%;
+    }
+    & input[type="text"], input[type="email"], input[type="tel"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+    & input[type="text"]:nth-child(1),
+    & input[type="email"]:nth-child(2) {
+        width: 48%; /* Divide os dois campos de texto */
+    }
+    & textarea {
+        resize: none;
+    }
+    & #whatsapp-button {
+        display: block;
+        width: 100%;
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    & #whatsapp-button:hover {
+        background-color: #20b858;
+    }
+    
+}
+
+@media screen and (max-width: 764px){
+
+    .wg1{
+        grid-column: span 2;
+    }
+    .hg1{
+        grid-row: span 2;
+    }
+    
+    div.galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: calc(45vh / 2);  
+    }
+
+    div.conteudo h1{
+        font-size: 14px;
+    }
+}
