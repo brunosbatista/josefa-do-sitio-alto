@@ -451,36 +451,70 @@ div.single-galeria:hover div.conteudo{
     bottom: 20px;
 }
 
-.contatos {
+/* Estilização geral da seção */
+#contato {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
     display: block;
-    & h1 {
-        text-align: center;
-        font-size: 30px;
-        
-    }
-    & span {
-        color: green;
-    }
-    .forms {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
+
+#contato h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contato h1 span {
+    color: #4CAF50; /* Cor de destaque para a palavra "conversar" */
+}
+
+/* Container do formulário */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Estilos dos campos do formulário */
+.form-group input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Cor ao focar */
+    outline: none;
+}
+
+/* Estilo do botão de enviar para WhatsApp */
+#whatsapp-button {
+    display: inline-block;
     
-        & .form-group {
-            display: flex;
-            justify-content: space-between;
-    
-            & input {
-                margin: 5px;
-            }
-        }
-    }
-    & .form-container {
-        padding: 20px;
-        max-width: 90%;
-        min-width: 50%;
-    }
-    
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #25D366; /* Verde característico do WhatsApp */
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#whatsapp-button:hover {
+    background-color: #1eb749; /* Cor ao passar o mouse */
 }
 
 
@@ -689,5 +723,13 @@ div.single-galeria:hover div.conteudo{
             height: auto;
             border-radius: 0;
         }
+    }
+
+    #contato h1 {
+        font-size: 1.8em;
+    }
+    
+    .form-container {
+        padding: 15px;
     }
 }
