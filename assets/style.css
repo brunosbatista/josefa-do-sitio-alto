@@ -5,6 +5,10 @@ body, html {
     font-family: "arial", "verdana", "sans-serif";
     scroll-behavior: smooth;
 }
+section {
+    display: flex;
+    justify-content: center;
+}
 .capa {
     padding-top: 120px;
     position: relative;
@@ -194,6 +198,7 @@ body, html {
     flex: 1;
 }
 .conquistas {
+    display: block;
     background-color: green;
     color: #fff;
     padding: 30px;
@@ -354,6 +359,7 @@ body, html {
 }
 
 .noticias {
+    display: block;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -446,7 +452,7 @@ div.single-galeria:hover div.conteudo{
 }
 
 .contatos {
-
+    display: block;
     & h1 {
         text-align: center;
         font-size: 30px;
@@ -473,36 +479,6 @@ div.single-galeria:hover div.conteudo{
         padding: 20px;
         max-width: 90%;
         min-width: 50%;
-    }
-    & input[type="text"], input[type="email"], input[type="tel"], textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        font-size: 16px;
-    }
-    & input[type="text"]:nth-child(1),
-    & input[type="email"]:nth-child(2) {
-        width: 48%; /* Divide os dois campos de texto */
-    }
-    & textarea {
-        resize: none;
-    }
-    & #whatsapp-button {
-        display: block;
-        width: 100%;
-        background-color: green;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        font-size: 18px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    & #whatsapp-button:hover {
-        background-color: #20b858;
     }
     
 }
@@ -640,12 +616,12 @@ div.single-galeria:hover div.conteudo{
             padding-top: 10px;
         }
         & .container-conquistas {
-            display: block;
-            justify-content: center;
-            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
         }
         & .card {
             width: 100%;
+            margin: auto;
             
         }
         & .card img {
@@ -655,25 +631,24 @@ div.single-galeria:hover div.conteudo{
 
     .sementes-crioulas {
         display: block;
-        width: 100%;
+        width: 80%;
         margin: 0;
-        padding: 10px auto;
 
         & .sementes-crioulas-historia {
-            width: 90%;
+            width: 100%;
             line-height: 1.8;
             font-size: 12px;
         }
 
         & .sementes-crioulas-imagem {
             display: block;
-            width: 90%;
+            width: 100%;
             margin: 0;
             padding: 0;
         }
 
         & .circular-imagem {
-            width: 90%;
+            width: 100%;
             height: auto;
             border-radius: 0;
         }
@@ -694,12 +669,12 @@ div.single-galeria:hover div.conteudo{
 
     .danca-de-roda {
         display: block;
-        width: 90%;
+        width: 80%;
         margin: 0;
         
     
         & .danca-de-roda-historia {
-            width: 90%;
+            width: 100%;
             line-height: 1.8;
             font-size: 12px;
         }
@@ -710,7 +685,7 @@ div.single-galeria:hover div.conteudo{
             padding: 0;
         }
         & .circular-imagem {
-            width: 90%;
+            width: 100%;
             height: auto;
             border-radius: 0;
         }
