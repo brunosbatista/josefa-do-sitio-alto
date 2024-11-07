@@ -7,14 +7,6 @@ window.addEventListener("scroll", function() {
     }
 });
 
-const mensagemWhasApp = {
-    nome: null,
-    email: null,
-    celular: null,
-    mensagem: null
-
-}
-
 function getDadosForms() {
     event.preventDefault()
     let nome = document.querySelector('#nome').value;
