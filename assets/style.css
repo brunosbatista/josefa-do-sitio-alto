@@ -677,7 +677,6 @@ textarea:focus {
         padding-top: 100px;
         height: 100vh;
         position: relative;
-        backdrop-filter: blur(1.5px);
         
         & h1 {
             font-size: 30px;
