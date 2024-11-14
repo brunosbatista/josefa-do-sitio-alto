@@ -272,9 +272,7 @@ section {
     & .circular-imagem {
         width: 400px;
         height: 400px;
-        border-radius: 50%;
         position: relative;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         animation: wave 3s infinite ease-in-out;
     }
 }
@@ -355,9 +353,7 @@ section {
     & .circular-imagem {
         width: 400px;
         height: 400px;
-        
         position: relative;
-        
         animation: wave 3s infinite ease-in-out;
     }
 }
