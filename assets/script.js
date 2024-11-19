@@ -36,3 +36,10 @@ function enviarMensagem(nome, email, celular, mensagem) {
 
      window.open(linkWhatsApp, "_blank");
 }
+
+function clearForms() {
+    document.querySelector('#nome').value = '';
+    document.querySelector('#email').value = '';
+    document.querySelector('#telefone').value = '';
+    document.querySelector('#mensagem').value = '';
+}
