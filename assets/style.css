@@ -75,10 +75,9 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100% - 60px); /* Evita ultrapassar os limites da página */
+    width: calc(100% - 60px); 
     height: 50px;
     padding: 10px;
-    padding-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
