@@ -306,12 +306,12 @@ section {
     }
 }
 .video-container {
+    width: 100%;
     background-color: green;
     color: #ffffff;
-    border-radius: 10px;
     padding: 20px;
     margin-top: 50px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     text-align: center;
 
     & iframe {
@@ -816,15 +816,15 @@ textarea:focus {
     }
 
     .video-container {
-        background-color: green;
-        color: #ffffff;
-        border-radius: 0px;
-        padding: 0px;
-        width: 100%;
-    
+        padding: 0;
+        padding-bottom: 30px;
         & iframe {
             width: 300px;
             height: auto;
+        }
+
+        & .content-btn-youtube {
+            
         }
     }
 
