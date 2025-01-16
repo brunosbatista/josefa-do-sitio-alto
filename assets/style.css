@@ -158,43 +158,56 @@ section {
 }
 
 .historia {
-    
     text-align: center;
     display: flex;
     align-items: center;
-    padding-top: 80px;
-    padding-bottom: 30px;
-    background-color: #ffff;
+    padding: 80px 20px 30px;
+    background-color: #fff;
+}
 
-    & .historia-titulo {
-        font-size: 20px;
-        text-align: center;
-        
-        & span {
-            color: green;
-            font-size: 40px;
-        }
-        & h1 {
-            line-height: 0;
-        }
-        & img {
-            width: 400px;
-            height: auto;
-            border-radius: 100%;
-            border: 1.5px solid #eee;
-            transition: transform 0.3s ease;
-        }
-        &  img:hover {
-            transform: scale(1.05);
-        }
-    }
-    & .historia-conteudo {
-        color: #333;
-        line-height: 1.8;
-        font-size: 14px;
-        padding: 0 20px;
-        text-align: justify;
-    }
+.historia-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.historia-titulo h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.historia-titulo .destaque {
+    color: green;
+    font-size: 2.5rem;
+}
+
+.historia-titulo img.imagem-destaque {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1.5px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Espaço entre a imagem e o conteúdo */
+}
+
+.historia-titulo img.imagem-destaque:hover {
+    transform: scale(1.05);
+}
+
+.historia-conteudo {
+    max-width: 800px;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.historia-conteudo div {
+    max-width: 90%;
+    text-align: justify;
 }
 .flex {
     flex: 1;
@@ -757,6 +770,7 @@ textarea:focus {
         padding-top: 20px;
         padding-bottom: 30px;
         background-color: #ffff;
+        padding: 5px;
     
         & .historia-titulo {
             text-align: center;
@@ -776,11 +790,9 @@ textarea:focus {
             }
         }
         & .historia-conteudo {
-            color: #333;
+            width: 100%;
             line-height: 1.8;
-            font-size: 14px;
-            padding: 0 20px;
-            text-align: justify;
+            font-size: 12px;
         }
     }
 
@@ -821,10 +833,6 @@ textarea:focus {
         & iframe {
             width: 300px;
             height: auto;
-        }
-
-        & .content-btn-youtube {
-            
         }
     }
 
