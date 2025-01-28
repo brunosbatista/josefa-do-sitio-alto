@@ -267,13 +267,17 @@ section {
 
 /* Descrição da conquista */
 .achievement-desc {
-    font-size: 1.1em;
+    line-height: 1.8;
     color: #555;
+    text-align: justify;
 }
 
 .achievement-item span {
+    width: 100%;
     font-size: 0.9em;
+    line-height: 1.8;
     color: #555;
+    
 }
 
 /* Link de rodapé */
