@@ -157,7 +157,7 @@ section {
     background-color: #45a049;
 }
 
-/* INICIO DO VISUAL NOVO */
+/* INICIO DO NOVO VISUAL  */
 
 @font-face {
     font-family: 'Tipassim';
@@ -214,15 +214,63 @@ p {
 
 .destaque {
     background-image: url('/assets/images/forma\ titulo.png');
-    background-size: 150px;               /* Ajusta a imagem para cobrir todo o span */
+    background-size: 150px;             
     background-position: center; 
     background-repeat: no-repeat;
     
 }
 
+.conquistas {
+    background-color: #F09E00;
+    padding-bottom: 20px;
+}
 
+.conquistas h1 {
+    text-align: center;
+}
 
+.achievement-list {
+    list-style-type: none;
+    padding: 0;
+}
 
+.achievement-item {
+    background-color: #f9f9f9;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito hover para cada item */
+.achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Data de cada conquista */
+.achievement-date {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+/* Descrição da conquista */
+.achievement-desc {
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+.achievement-item span {
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 1.8;
+    color: #555;
+    
+}
 
 
 
@@ -618,6 +666,7 @@ textarea:focus {
         }
     }
 
+    /* INICIO DO NOVO VISUAL*/
     .content-container {
         padding: 20px;
     }
@@ -646,11 +695,10 @@ textarea:focus {
     }
 
     .conquistas {
-        background-color: green;
         color: #fff;
-        padding: 10px;
     }
 
+     /* FIM DO NOVO VISUAL*/
     .sementes-crioulas {
         display: block;
         width: 80%;
