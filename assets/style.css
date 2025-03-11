@@ -272,8 +272,31 @@ p {
     
 }
 
+.sementes h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.sementes-imagem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.sementes-imagem img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.sementes-historia {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.sementes-historia-conteudo {
+    width: 680px;
+}
 
 
 
@@ -698,31 +721,18 @@ textarea:focus {
         color: #fff;
     }
 
-     /* FIM DO NOVO VISUAL*/
-    .sementes-crioulas {
-        display: block;
-        width: 80%;
-        margin: 0;
-
-        & .sementes-crioulas-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-
-        & .sementes-crioulas-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
+    .sementes-historia-conteudo {
+        width: 100%;
     }
+
+    .sementes-imagem img {
+        width: 250px;
+        border-radius: 15px;
+        margin: 5px;
+    }
+
+     /* FIM DO NOVO VISUAL*/
+    
 
     .video-container {
         padding: 0;
