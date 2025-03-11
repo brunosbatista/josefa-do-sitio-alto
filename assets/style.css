@@ -298,7 +298,32 @@ p {
     width: 680px;
 }
 
+.videos-youtube {
+    background-color:  #F09E00;;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
 
+.content-container-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.videos-youtube iframe {
+    border-radius: 20px;
+    width: 260px;
+}
+
+.videos-youtube a {
+    font-family: Tipassim, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
 
 
 
@@ -731,17 +756,12 @@ textarea:focus {
         margin: 5px;
     }
 
+    .videos-youtube iframe {
+        margin-bottom: 20px;
+    }
+
      /* FIM DO NOVO VISUAL*/
     
-
-    .video-container {
-        padding: 0;
-        padding-bottom: 30px;
-        & iframe {
-            width: 300px;
-            height: auto;
-        }
-    }
 
     .danca-de-roda {
         display: block;
@@ -773,56 +793,5 @@ textarea:focus {
     
     .form-container {
         padding: 15px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) { 
-    .sementes-crioulas {
-        display: block;
-        width: 80%;
-        margin: 0;
-
-        & .sementes-crioulas-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-
-        & .sementes-crioulas-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
-    }
-
-    .danca-de-roda {
-        display: block;
-        width: 80%;
-        margin: 0;
-        
-    
-        & .danca-de-roda-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-        & .danca-de-roda-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
     }
 }
