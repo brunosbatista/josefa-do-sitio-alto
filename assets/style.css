@@ -325,6 +325,38 @@ p {
     color: #333;
 }
 
+.danca h1 {
+    text-align: center;
+    color: #BF3F02;
+}
+
+.danca span {
+    background-image: url('/assets/images/forma-dança.png');
+    background-size: 270px;           
+    background-position: bottom; 
+    background-repeat: no-repeat;
+}
+
+.content-container-danca {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-around; /* Centraliza os itens horizontalmente */
+}
+
+.danca-de-roda-imagem img {
+    width: 100%;
+}
+
+.danca-de-roda-historia {
+    padding: 10px;
+    flex: 1;
+}
+
+.danca-de-roda-imagem {
+    flex: 1;
+}
+
+
 
 
 
@@ -758,6 +790,10 @@ textarea:focus {
 
     .videos-youtube iframe {
         margin-bottom: 20px;
+    }
+
+    .content-container-danca {
+        display: block;
     }
 
      /* FIM DO NOVO VISUAL*/
