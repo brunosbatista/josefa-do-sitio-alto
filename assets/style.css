@@ -484,24 +484,6 @@ div.single-galeria:hover div.conteudo{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FIM DO VISUAL NOVO*/
-/* Estilização geral da seção */
 #contato {
     background-color: #f9f9f9;
     padding: 40px 20px;
@@ -583,6 +565,7 @@ textarea:focus {
     font-size: 1.2em;
     color: #666;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .patrocinadores-section .logos {
@@ -600,6 +583,24 @@ textarea:focus {
 .patrocinadores-section .logos a img:hover {
     transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM DO VISUAL NOVO*/
+/* Estilização geral da seção */
+
+
 
 
 #rodape {
