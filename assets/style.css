@@ -157,86 +157,78 @@ section {
     background-color: #45a049;
 }
 
-.historia {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    padding: 80px 20px 30px;
-    background-color: #fff;
+/* INICIO DO NOVO VISUAL  */
+
+@font-face {
+    font-family: 'Tipassim';
+    src: url('fonts/TIPASSIM.otf') format('woff2'),
+         url('fonts/TIPASSIM.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.historia-titulo {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.historia-titulo h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.historia-titulo .destaque {
-    color: green;
-    font-size: 2.5rem;
-}
-
-.historia-titulo img.imagem-destaque {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border: 1.5px solid #eee;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    margin-bottom: 20px; /* Espaço entre a imagem e o conteúdo */
-}
-
-.historia-titulo img.imagem-destaque:hover {
-    transform: scale(1.05);
-}
-
-.historia-conteudo {
-    max-width: 800px;
-    line-height: 1.8;
-    font-size: 14px;
-    color: #333;
+.container {
     display: flex;
     justify-content: center;
+    width: 100%;
+  }
+  
+  .content-container {
+    max-width: 1080px;
+    width: 100%;
+    padding: 0;
+  }
+
+h1 {
+    font-family: Tipassim, sans-serif;
+    font-size: 72px;
+    color: #572C21;
+    margin-bottom: 0;
 }
 
-.historia-conteudo div {
-    max-width: 90%;
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: 100;
+    line-height: 20px;
     text-align: justify;
 }
-.flex {
-    flex: 1;
-}
-.conquistas {
-    display: block;
-    background-color: green;
-    color: #fff;
-    padding: 30px;
 
-    & h1 {
-        font-size: 30px;
-    }
+.historia {
+    display: flex;
 }
-.container {
-    border-radius: 12px;
+
+.historia img {
+    width: 400px;
+}
+
+.barra-decorada  {
+    margin-top: 15px;
+}
+
+.barra-decorada img {
     width: 100%;
-    padding-bottom: 10px;
+    height: 50px;
+}
+
+.destaque {
+    background-image: url('/assets/images/forma\ titulo.png');
+    background-size: 150px;             
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+}
+
+.conquistas {
+    background-color: #F09E00;
+    padding-bottom: 20px;
+}
+
+.conquistas h1 {
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
 }
 
-/* Animação de fade-in */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Lista de conquistas */
 .achievement-list {
     list-style-type: none;
     padding: 0;
@@ -280,147 +272,121 @@ section {
     
 }
 
-/* Link de rodapé */
-.footer-link {
-    display: block;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #4a90e2;
-    text-decoration: none;
-    transition: color 0.3s;
+.sementes h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.footer-link:hover {
+.sementes-imagem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sementes-imagem img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.sementes-historia {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.sementes-historia-conteudo {
+    width: 680px;
+}
+
+.videos-youtube {
+    background-color:  #F09E00;;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.content-container-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.videos-youtube iframe {
+    border-radius: 20px;
+    width: 260px;
+}
+
+.videos-youtube a {
+    font-family: Tipassim, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
     color: #333;
 }
-.sementes-crioulas {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #ffffff;
-    width: 90%;
-    margin: 50px auto;
-    border-radius: 10px;
 
-    & .sementes-crioulas-historia {
-        width: 65%;
-        line-height: 1.8;
-        font-size: 14px;
-        color: #333;
-        padding-right: 20px;
-        text-align: justify;
-    }
-    & span {
-        color: green;
-    }
-    & .sementes-crioulas-imagem {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    & .circular-imagem {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        animation: wave 3s infinite ease-in-out;
-    }
-}
-.video-container {
-    width: 100%;
-    background-color: green;
-    color: #ffffff;
-    padding: 20px;
-    margin-top: 50px;
-    padding-bottom: 30px;
+.danca h1 {
     text-align: center;
-
-    & iframe {
-        width: 350px;
-        height: 200px;
-        margin: 10px;
-        border: none;
-        border-radius: 10px;
-    }
-    & h1 {
-        font-size: 30px;
-        line-height: 70px;
-    }
-    & .content-btn-youtube {
-        background-color: #fff;
-        border: 2px solid green;
-        color: #ffffff;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 20px;
-        width: 150px;
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    & .content-btn-youtube a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    & .content-btn-youtube a:visited {
-        color: green;
-    }
-    & .content-btn-youtube:hover {
-        background-color: greenyellow;
-        color: #ffffff;
-    }
+    color: #BF3F02;
 }
-.danca-de-roda {
+
+.danca span {
+    background-image: url('/assets/images/forma-dança.png');
+    background-size: 270px;           
+    background-position: bottom; 
+    background-repeat: no-repeat;
+}
+
+.content-container-danca {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    width: 90%;
-    margin: 50px auto;
-    border-radius: 10px;
-
-    & .danca-de-roda-historia {
-        width: 65%;
-        line-height: 1.8;
-        font-size: 14px;
-        color: #333;
-        padding-right: 20px;
-        text-align: justify;
-    }
-    & span {
-        color: green;
-    }
-    & .danca-de-roda-imagem {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    & .circular-imagem {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        animation: wave 3s infinite ease-in-out;
-    }
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-around; /* Centraliza os itens horizontalmente */
 }
 
-.noticias {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.danca-de-roda-imagem img {
+    width: 100%;
+}
 
-    & h1 {
-        text-align: center;
-        font-size: 30px;
-    }
-    & span {
-        color: green;
-    }
+.danca-de-roda-historia {
+    padding: 10px;
+    flex: 1;
+}
+
+.danca-de-roda-imagem {
+    flex: 1;
+}
+
+.titulo-midia {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.titulo-midia-conteudo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 20px;
+}
+
+.titulo-midia-conteudo h1 {
+    margin-top: 0;
+}
+
+.barra-decorada-midia {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #666;
+    
+}
+.barra-decorada-midia img{
+    width: 100%;
+    height: 20px;
 }
 
 
@@ -444,6 +410,18 @@ div.galeria {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 45vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.galeria p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.galeria h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.single-galeria{
@@ -502,7 +480,10 @@ div.single-galeria:hover div.conteudo{
     bottom: 20px;
 }
 
-/* Estilização geral da seção */
+.contato {
+    text-align: center;
+}
+
 #contato {
     background-color: #f9f9f9;
     padding: 40px 20px;
@@ -584,6 +565,7 @@ textarea:focus {
     font-size: 1.2em;
     color: #666;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .patrocinadores-section .logos {
@@ -601,6 +583,24 @@ textarea:focus {
 .patrocinadores-section .logos a img:hover {
     transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM DO VISUAL NOVO*/
+/* Estilização geral da seção */
+
+
 
 
 #rodape {
@@ -688,6 +688,11 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
     .header {
         margin: 10px 20px;
         height: 30px;
@@ -773,101 +778,60 @@ textarea:focus {
         }
     }
 
+    /* INICIO DO NOVO VISUAL*/
+    .content-container {
+        padding: 20px;
+    }
+
     .historia {
-        display: block;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        background-color: #ffff;
-        padding: 5px;
+        flex-direction: column-reverse;
+    }
+
+    .historia img {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
     
-        & .historia-titulo {
-            text-align: center;
-            
-            & span {
-                color: green;
-                
-            }
-            & h1 {
-                line-height: 40px;
-            }
-            & img {
-                width: 300px;
-                height: auto;
-                border-radius: 100%;
-                transition: transform 0.3s ease;
-            }
-        }
-        & .historia-conteudo {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
+    .historia-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .destaque {
+        background-size: 110px;
+    }
+
+    .barra-decorada {
+        margin-bottom: 15px;
     }
 
     .conquistas {
-        background-color: green;
         color: #fff;
-        padding: 10px;
     }
 
-    .sementes-crioulas {
+    .sementes-historia-conteudo {
+        width: 100%;
+    }
+
+    .sementes-imagem img {
+        width: 250px;
+        border-radius: 15px;
+        margin: 5px;
+    }
+
+    .videos-youtube iframe {
+        margin-bottom: 20px;
+    }
+
+    .content-container-danca {
         display: block;
-        width: 80%;
-        margin: 0;
-
-        & .sementes-crioulas-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-
-        & .sementes-crioulas-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
     }
 
-    .video-container {
-        padding: 0;
-        padding-bottom: 30px;
-        & iframe {
-            width: 300px;
-            height: auto;
-        }
-    }
-
-    .danca-de-roda {
-        display: block;
-        width: 80%;
-        margin: 0;
-        
+     /* FIM DO NOVO VISUAL*/
     
-        & .danca-de-roda-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-        & .danca-de-roda-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
-    }
+
+    
 
     #contato h1 {
         font-size: 1.8em;
@@ -875,56 +839,5 @@ textarea:focus {
     
     .form-container {
         padding: 15px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) { 
-    .sementes-crioulas {
-        display: block;
-        width: 80%;
-        margin: 0;
-
-        & .sementes-crioulas-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-
-        & .sementes-crioulas-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
-    }
-
-    .danca-de-roda {
-        display: block;
-        width: 80%;
-        margin: 0;
-        
-    
-        & .danca-de-roda-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-        & .danca-de-roda-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
     }
 }
