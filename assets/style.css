@@ -81,7 +81,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    background-color: #BF3F02; /* Fundo branco translúcido */
     border-radius: 30px;
     margin: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
@@ -106,7 +106,7 @@ section {
     display: flex;
     align-items: center;
     font-size: 20px;
-    color: green;
+    color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
@@ -122,16 +122,20 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Tipassim;
 }
 
 .navbar a {
     font-size: 16px;
-    color: #333; /* Texto cinza escuro */
+    color: #fff; /* Texto cinza escuro */
     text-decoration: none;
     font-weight: 500;
     margin: 0 15px; /* Ajuste de espaçamento entre links */
 }
 
+.navbar > .cta-button {
+    color: #000;
+} 
 .icons {
     position: absolute;
     right: 5%;
@@ -146,8 +150,7 @@ section {
 }
 
 .cta-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #D66C00;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 30px;
@@ -163,6 +166,14 @@ section {
     font-family: 'Tipassim';
     src: url('fonts/TIPASSIM.otf') format('woff2'),
          url('fonts/TIPASSIM.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('fonts/bahnschrift.ttf') format('woff2'),
+         url('fonts/bahnschrift.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -193,6 +204,98 @@ p {
     font-weight: 100;
     line-height: 20px;
     text-align: justify;
+}
+
+/* Header */
+.header {
+    font-family: Bahnschrift;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 60px); 
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BF3F02; /* Fundo branco translúcido */
+    border-radius: 30px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    z-index: 10;
+}
+
+/* Background Blur Effect */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+    border-radius: 30px; /* Mantém o arredondamento */
+}
+
+/* Logo */
+.logo {
+    font-family: Bahnschrift;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Arredondamento da imagem */
+    margin-right: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    font-family: Bahnschrift;
+    font-size: 16px;
+    color: #fff; /* Texto cinza escuro */
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px; /* Ajuste de espaçamento entre links */
+}
+
+.navbar > .cta-button {
+    color: #000;
+} 
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #000; /* Verde claro para os ícones */
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.cta-button {
+    background-color: #D66C00;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.cta-button:hover {
+    background-color: #45a049;
 }
 
 .historia {
@@ -693,61 +796,7 @@ textarea:focus {
         text-align: center;
         margin-bottom: 20px;
     }
-    .header {
-        margin: 10px 20px;
-        height: 30px;
-    }
-    .icons {
-        display: inline-flex;
-    }
-
-    #check:checked~.icons #menu-icon {
-        display: none;
-    }
-
-    #close-icon {
-        display: none;
-    }
-
-    #check:checked~.icons #close-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 80%;
-        left: 0;
-        width: 100%;
-        height: 0;
-        display: block;
-        background-color: #fff;
-        backdrop-filter: blur(50px);
-        box-shadow: 0 .5rem 1rem rgba(0, 128, 0, .1);
-        overflow: hidden;
-    }
-
-    #check:checked~.navbar {
-        height: 20rem;
-        margin-top: 10px;
-        border-radius: 20px;
-        height: 80vh;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 1.2rem;
-        margin: 1.5rem 0;
-        text-align: center;
-        transform: translateY(-50px);
-        opacity: 0;
-        transition: .3s ease;
-    }
-
-    #check:checked~.navbar a{
-        transform: translateY(0);
-        opacity: 1;
-        transition-delay: calc(.15s * var(--1));
-    }
+    
 
     .wg1{
         grid-column: span 2;
@@ -781,6 +830,67 @@ textarea:focus {
     /* INICIO DO NOVO VISUAL*/
     .content-container {
         padding: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .header {
+        margin: 10px 20px;
+        height: 30px;
+    }
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 90%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        display: block;
+        background-color: #BF3F02;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 128, 0, .1);
+        overflow: hidden;
+        opacity: 0.9;
+    }
+
+    #check:checked~.navbar {
+        height: 20rem;
+        margin-top: 10px;
+        border-radius: 20px;
+        height: 80vh;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--1));
     }
 
     .historia {
