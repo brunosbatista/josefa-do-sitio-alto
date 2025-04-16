@@ -26,7 +26,6 @@ body, html {
     height: 100%;
     font-family: "arial", "verdana", "sans-serif";
     scroll-behavior: smooth;
-    background-color: #f9f9f9;
 }
 
 @font-face {
