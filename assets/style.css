@@ -26,6 +26,7 @@ body, html {
     height: 100%;
     font-family: "arial", "verdana", "sans-serif";
     scroll-behavior: smooth;
+    background-color: #f9f9f9;
 }
 
 @font-face {
@@ -239,6 +240,7 @@ p {
     font-weight: bold;
     color: #000;
     margin-bottom: 5px;
+    font-family: Bahnschrift, sans-serif;
 }
 
 .date {
@@ -248,6 +250,7 @@ p {
 /* Descrição da conquista */
 .achievement-desc {
     line-height: 1.8;
+    font-size: 1rem;
     color: #555;
     text-align: justify;
 }
