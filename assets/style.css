@@ -136,7 +136,7 @@ p {
 }
 
 .navbar > .cta-button {
-    color: #000;
+    color: #fff;
 } 
 .icons {
     position: absolute;
@@ -152,14 +152,14 @@ p {
 }
 
 .cta-button {
-    background-color: #D66C00;
+    background-color: #F09E00;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
 }
 .cta-button:hover {
-    background-color: #45a049;
+    background-color: #D66C00;
 }
 
 .capa {
