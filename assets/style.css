@@ -136,7 +136,7 @@ p {
 }
 
 .navbar > .cta-button {
-    color: #000;
+    color: #fff;
 } 
 .icons {
     position: absolute;
@@ -152,14 +152,14 @@ p {
 }
 
 .cta-button {
-    background-color: #D66C00;
+    background-color: #F09E00;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
 }
 .cta-button:hover {
-    background-color: #45a049;
+    background-color: #D66C00;
 }
 
 .capa {
@@ -197,7 +197,7 @@ p {
 }
 
 .destaque {
-    background-image: url('/assets/images/forma\ titulo.png');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/josefa-do-sitio-alto.firebasestorage.app/o/site-josefadositioalto.com.br%2Fforma%20titulo.png?alt=media&token=3267b393-45a1-4379-96e2-24c98cf15d70');
     background-size: 150px;             
     background-position: center; 
     background-repeat: no-repeat;
@@ -329,7 +329,7 @@ p {
 }
 
 .danca span {
-    background-image: url('/assets/images/forma-dança.png');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/josefa-do-sitio-alto.firebasestorage.app/o/site-josefadositioalto.com.br%2Fforma-dan%C3%A7a.png?alt=media&token=63824a6f-5ba6-475e-b2a8-51bb409aeac2');
     background-size: 270px;           
     background-position: bottom; 
     background-repeat: no-repeat;
@@ -339,6 +339,11 @@ p {
     display: flex;
     align-items: center; /* Centraliza os itens verticalmente */
     justify-content: space-around; /* Centraliza os itens horizontalmente */
+}
+
+.danca-de-roda-imagem figcaption {
+    font-size: 10px;
+    margin-top: 5px;
 }
 
 .danca-de-roda-imagem img {
@@ -840,7 +845,12 @@ textarea:focus {
         border-radius: 15px;
         margin: 5px;
     }
-
+   
+    .danca-de-roda-imagem figure {
+        width: 100%;
+        margin: 0;
+    }
+  
     .videos-youtube iframe {
         margin-bottom: 20px;
     }
