@@ -589,7 +589,7 @@ textarea:focus {
 }
 
 #rodape {
-    background-color: #1e1e1e;
+    background-color: #BF3F02;
     color: #fff;
     padding: 40px 20px;
     font-size: 14px;
@@ -619,7 +619,7 @@ textarea:focus {
 }
 
 .rodape-secao p {
-    color: #ccc;
+    color: #fff;
     line-height: 1.6;
 }
 
