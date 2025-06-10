@@ -191,9 +191,6 @@ p {
     width: 450px;
 }
 
-.chamada-capa-conteudo h1 {
-    color: #F09E00;
-}
 
 .historia {
     display: flex;
@@ -762,6 +759,9 @@ textarea:focus {
     }
 
     /* INICIO DO NOVO VISUAL*/
+    p {
+        color: #000;
+    }
     .content-container {
         padding: 20px;
     }
