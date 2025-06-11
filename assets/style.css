@@ -1,35 +1,8 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: "arial", "verdana", "sans-serif";
-    scroll-behavior: smooth;
-}
-section {
-    display: flex;
-    justify-content: center;
-}
-.capa {
-    padding-top: 120px;
-    position: relative;
-    height: 80vh;
-    overflow: hidden;
-}
 
-.video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 .content {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
     padding: 20px;
     margin-bottom: 50px;
     margin-left: 40px;
@@ -37,41 +10,71 @@ section {
     color: white;
     text-align: left;
 
-    & h1 {
-        font-size: 50px;
+    
+    & img {
+        width: 250px;
     }
-    & p {
-        font-size: 20px;
-        line-height: 0;
-    }
-    & .content-btn  {
-        background-color: green;
-        border: 2px solid green;
-        color: white;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 20px;
-        width: 100px;
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    & .content-btn a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    & .content-btn a:visited {
-        color: white;
-    }
-    & .content-btn:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+}
+
+
+
+/* INICIO DO NOVO VISUAL  */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "arial", "verdana", "sans-serif";
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Tipassim';
+    src: url('fonts/TIPASSIM.otf') format('woff2'),
+         url('fonts/TIPASSIM.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('fonts/bahnschrift.ttf') format('woff2'),
+         url('fonts/bahnschrift.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .content-container {
+    max-width: 1080px;
+    width: 100%;
+    padding: 0;
+  }
+
+h1 {
+    font-family: Tipassim, sans-serif;
+    font-size: 72px;
+    color: #572C21;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333;
+    font-weight: 100;
+    line-height: 20px;
+    text-align: justify;
 }
 
 /* Header */
 .header {
+    font-family: Bahnschrift;
     position: fixed;
     top: 0;
     left: 0;
@@ -81,7 +84,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    background-color: #BF3F02; /* Fundo branco translúcido */
     border-radius: 30px;
     margin: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
@@ -103,19 +106,18 @@ section {
 
 /* Logo */
 .logo {
+    font-family: Bahnschrift;
     display: flex;
     align-items: center;
-    font-size: 20px;
-    color: green;
+    font-size: 40px;
+    color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; /* Arredondamento da imagem */
-    margin-right: 10px;
+    width: 150px;
+    
 }
 
 .navbar {
@@ -125,13 +127,17 @@ section {
 }
 
 .navbar a {
+    font-family: Bahnschrift;
     font-size: 16px;
-    color: #333; /* Texto cinza escuro */
+    color: #fff; /* Texto cinza escuro */
     text-decoration: none;
     font-weight: 500;
     margin: 0 15px; /* Ajuste de espaçamento entre links */
 }
 
+.navbar > .cta-button {
+    color: #fff;
+} 
 .icons {
     position: absolute;
     right: 5%;
@@ -146,97 +152,78 @@ section {
 }
 
 .cta-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #F09E00;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
 }
 .cta-button:hover {
-    background-color: #45a049;
+    background-color: #D66C00;
 }
+
+.capa {
+    padding-top: 120px;
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.chamada-capa {
+    display: flex;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.chamada-capa img {
+    width: 450px;
+}
+
 
 .historia {
-    text-align: center;
     display: flex;
-    align-items: center;
-    padding: 80px 20px 30px;
-    background-color: #fff;
 }
 
-.historia-titulo {
-    text-align: center;
-    margin-bottom: 40px;
+.historia img {
+    width: 400px;
 }
 
-.historia-titulo h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-    color: #333;
-    margin-bottom: 20px;
+.barra-decorada  {
+    margin-top: 15px;
 }
 
-.historia-titulo .destaque {
-    color: green;
-    font-size: 2.5rem;
-}
-
-.historia-titulo img.imagem-destaque {
+.barra-decorada img {
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    border: 1.5px solid #eee;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    margin-bottom: 20px; /* Espaço entre a imagem e o conteúdo */
+    height: 50px;
 }
 
-.historia-titulo img.imagem-destaque:hover {
-    transform: scale(1.05);
+.destaque {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/josefa-do-sitio-alto.firebasestorage.app/o/site-josefadositioalto.com.br%2Fforma%20titulo.png?alt=media&token=3267b393-45a1-4379-96e2-24c98cf15d70');
+    background-size: 150px;             
+    background-position: center; 
+    background-repeat: no-repeat;
+    
 }
 
-.historia-conteudo {
-    max-width: 800px;
-    line-height: 1.8;
-    font-size: 14px;
-    color: #333;
-    display: flex;
-    justify-content: center;
-}
-
-.historia-conteudo div {
-    max-width: 90%;
-    text-align: justify;
-}
-.flex {
-    flex: 1;
-}
 .conquistas {
-    display: block;
-    background-color: green;
-    color: #fff;
-    padding: 30px;
-
-    & h1 {
-        font-size: 30px;
-    }
+    background-color: #F09E00;
+    padding-bottom: 20px;
 }
-.container {
-    border-radius: 12px;
-    width: 100%;
-    padding-bottom: 10px;
+
+.conquistas h1 {
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
 }
 
-/* Animação de fade-in */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Lista de conquistas */
 .achievement-list {
     list-style-type: none;
     padding: 0;
@@ -246,7 +233,7 @@ section {
     background-color: #f9f9f9;
     margin: 15px 0;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -259,15 +246,21 @@ section {
 
 /* Data de cada conquista */
 .achievement-date {
-    font-size: 0.9em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #000;
     margin-bottom: 5px;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.date {
+    color: #000;
 }
 
 /* Descrição da conquista */
 .achievement-desc {
     line-height: 1.8;
+    font-size: 1rem;
     color: #555;
     text-align: justify;
 }
@@ -280,147 +273,135 @@ section {
     
 }
 
-/* Link de rodapé */
-.footer-link {
-    display: block;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #4a90e2;
-    text-decoration: none;
-    transition: color 0.3s;
+.sementes h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.footer-link:hover {
+.sementes-imagem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sementes-imagem figure {
+    margin: 5px;
+}
+
+.sementes-imagem figcaption {
+    font-size: 10px;
+}
+
+.sementes-imagem img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.sementes-historia {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.sementes-historia-conteudo {
+    width: 780px;
+}
+
+.videos-youtube {
+    background-color:  #F09E00;;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.content-container-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.videos-youtube iframe {
+    border-radius: 20px;
+    width: 260px;
+}
+
+.videos-youtube a {
+    font-family: Tipassim, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
     color: #333;
 }
-.sementes-crioulas {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #ffffff;
-    width: 90%;
-    margin: 50px auto;
-    border-radius: 10px;
 
-    & .sementes-crioulas-historia {
-        width: 65%;
-        line-height: 1.8;
-        font-size: 14px;
-        color: #333;
-        padding-right: 20px;
-        text-align: justify;
-    }
-    & span {
-        color: green;
-    }
-    & .sementes-crioulas-imagem {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    & .circular-imagem {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        animation: wave 3s infinite ease-in-out;
-    }
-}
-.video-container {
-    width: 100%;
-    background-color: green;
-    color: #ffffff;
-    padding: 20px;
-    margin-top: 50px;
-    padding-bottom: 30px;
+.danca h1 {
     text-align: center;
-
-    & iframe {
-        width: 350px;
-        height: 200px;
-        margin: 10px;
-        border: none;
-        border-radius: 10px;
-    }
-    & h1 {
-        font-size: 30px;
-        line-height: 70px;
-    }
-    & .content-btn-youtube {
-        background-color: #fff;
-        border: 2px solid green;
-        color: #ffffff;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 20px;
-        width: 150px;
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    & .content-btn-youtube a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    & .content-btn-youtube a:visited {
-        color: green;
-    }
-    & .content-btn-youtube:hover {
-        background-color: greenyellow;
-        color: #ffffff;
-    }
+    color: #BF3F02;
 }
-.danca-de-roda {
+
+.danca span {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/josefa-do-sitio-alto.firebasestorage.app/o/site-josefadositioalto.com.br%2Fforma-dan%C3%A7a.png?alt=media&token=63824a6f-5ba6-475e-b2a8-51bb409aeac2');
+    background-size: 270px;           
+    background-position: bottom; 
+    background-repeat: no-repeat;
+}
+
+.content-container-danca {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    width: 90%;
-    margin: 50px auto;
-    border-radius: 10px;
-
-    & .danca-de-roda-historia {
-        width: 65%;
-        line-height: 1.8;
-        font-size: 14px;
-        color: #333;
-        padding-right: 20px;
-        text-align: justify;
-    }
-    & span {
-        color: green;
-    }
-    & .danca-de-roda-imagem {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    & .circular-imagem {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        animation: wave 3s infinite ease-in-out;
-    }
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-around; /* Centraliza os itens horizontalmente */
 }
 
-.noticias {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.danca-de-roda-imagem figcaption {
+    font-size: 10px;
+    margin-top: 5px;
+}
 
-    & h1 {
-        text-align: center;
-        font-size: 30px;
-    }
-    & span {
-        color: green;
-    }
+.danca-de-roda-imagem img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.danca-de-roda-historia {
+    padding: 10px;
+    flex: 1;
+}
+
+.danca-de-roda-imagem {
+    flex: 1;
+}
+
+.titulo-midia {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.titulo-midia-conteudo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 20px;
+}
+
+.titulo-midia-conteudo h1 {
+    margin-top: 0;
+}
+
+.barra-decorada-midia {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #666;
+    
+}
+.barra-decorada-midia img{
+    width: 100%;
+    height: 20px;
 }
 
 
@@ -444,6 +425,18 @@ div.galeria {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 45vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.galeria p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.galeria h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.single-galeria{
@@ -502,7 +495,10 @@ div.single-galeria:hover div.conteudo{
     bottom: 20px;
 }
 
-/* Estilização geral da seção */
+.contato {
+    text-align: center;
+}
+
 #contato {
     background-color: #f9f9f9;
     padding: 40px 20px;
@@ -584,6 +580,7 @@ textarea:focus {
     font-size: 1.2em;
     color: #666;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .patrocinadores-section .logos {
@@ -602,84 +599,118 @@ textarea:focus {
     transform: scale(1.1);
 }
 
-
 #rodape {
-    background-color: #333;
+    background-color: #BF3F02;
     color: #fff;
     padding: 40px 20px;
-    text-align: center;
     font-size: 14px;
+    text-align: center;
 }
 
 .rodape-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #555;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #444;
 }
 
 .rodape-secao {
     flex: 1;
+    min-width: 250px;
     margin: 10px;
-    min-width: 200px;
 }
 
 .rodape-secao h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #f4f4f4;
 }
 
 .rodape-secao p {
-    margin: 5px 0;
-    color: #ddd;
+    color: #fff;
     line-height: 1.6;
+    text-align: center;
 }
 
 .social-icons a {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 8px;
     opacity: 0.8;
-    transition: opacity 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .social-icons a:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
 }
 
 .rodape-direitos {
-    margin-top: 20px;
-    font-size: 12px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
     color: #aaa;
 }
 
+.rodape-direitos p {
+    text-align: center;
+    color: #fff;
+}
+
+.rodape-direitos a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .creditos-redes-sociais {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .creditos-redes-sociais a {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 6px;
     opacity: 0.8;
-    transition: opacity 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .creditos-redes-sociais a:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 .creditos-redes-sociais img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIM DO VISUAL NOVO*/
+/* Estilização geral da seção */
+
+
+
 
 @media ( max-width: 425px) {
     .patrocinadores-section .logos {
@@ -688,6 +719,55 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+
+    .wg1{
+        grid-column: span 2;
+    }
+    .hg1{
+        grid-row: span 2;
+    }
+    
+    div.galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: calc(45vh / 2);  
+    }
+
+    div.conteudo h1{
+        font-size: 14px;
+    }
+    .content {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content:end;
+        
+       
+        & img {
+            width: 200px;
+            margin-right: 20px;
+        }
+    }
+
+    /* INICIO DO NOVO VISUAL*/
+    p {
+        color: #000;
+    }
+    .content-container {
+        padding: 20px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
     .header {
         margin: 10px 20px;
         height: 30px;
@@ -710,15 +790,16 @@ textarea:focus {
 
     .navbar {
         position: absolute;
-        top: 80%;
+        top: 90%;
         left: 0;
         width: 100%;
         height: 0;
         display: block;
-        background-color: #fff;
+        background-color: #BF3F02;
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 128, 0, .1);
         overflow: hidden;
+        opacity: 0.9;
     }
 
     #check:checked~.navbar {
@@ -744,130 +825,82 @@ textarea:focus {
         transition-delay: calc(.15s * var(--1));
     }
 
-    .wg1{
-        grid-column: span 2;
-    }
-    .hg1{
-        grid-row: span 2;
-    }
-    
-    div.galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: calc(45vh / 2);  
+    .chamada-capa {
+         flex-direction: column-reverse;
+         margin-bottom: 0;
+         margin-top: 0;
     }
 
-    div.conteudo h1{
-        font-size: 14px;
-    }
-    .content {
+    .chamada-capa img {
+        width: 90%;
         margin: 0;
-        padding-top: 100px;
-        height: 100vh;
-        position: relative;
-        
-        & h1 {
-            font-size: 50px;
-        }
-        & .content-btn {
-            margin-top: 35px;
-        }
+        padding: 0;
     }
 
     .historia {
-        display: block;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        background-color: #ffff;
-        padding: 5px;
+        flex-direction: column-reverse;
+    }
+
+    .historia img {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
     
-        & .historia-titulo {
-            text-align: center;
-            
-            & span {
-                color: green;
-                
-            }
-            & h1 {
-                line-height: 40px;
-            }
-            & img {
-                width: 300px;
-                height: auto;
-                border-radius: 100%;
-                transition: transform 0.3s ease;
-            }
-        }
-        & .historia-conteudo {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
+    .historia-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .destaque {
+        background-size: 110px;
+    }
+
+    .barra-decorada {
+        margin-bottom: 15px;
     }
 
     .conquistas {
-        background-color: green;
         color: #fff;
-        padding: 10px;
     }
 
-    .sementes-crioulas {
-        display: block;
-        width: 80%;
+    .sementes-historia-conteudo {
+        width: 100%;
+    }
+
+    .sementes-imagem img {
+        width: 100%;
+        border-radius: 15px;
+        margin: 5px;
+    }
+   
+    .danca-de-roda-imagem figure {
+        width: 100%;
         margin: 0;
-
-        & .sementes-crioulas-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-
-        & .sementes-crioulas-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
+    }
+  
+    .videos-youtube iframe {
+        margin-bottom: 20px;
     }
 
-    .video-container {
-        padding: 0;
-        padding-bottom: 30px;
-        & iframe {
-            width: 300px;
-            height: auto;
-        }
-    }
-
-    .danca-de-roda {
+    .content-container-danca {
         display: block;
-        width: 80%;
-        margin: 0;
-        
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-secao {
+        margin: 20px 0;
+    }
+
+     /* FIM DO NOVO VISUAL*/
     
-        & .danca-de-roda-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-        & .danca-de-roda-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
-    }
+
+    
 
     #contato h1 {
         font-size: 1.8em;
@@ -875,56 +908,5 @@ textarea:focus {
     
     .form-container {
         padding: 15px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) { 
-    .sementes-crioulas {
-        display: block;
-        width: 80%;
-        margin: 0;
-
-        & .sementes-crioulas-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-
-        & .sementes-crioulas-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
-    }
-
-    .danca-de-roda {
-        display: block;
-        width: 80%;
-        margin: 0;
-        
-    
-        & .danca-de-roda-historia {
-            width: 100%;
-            line-height: 1.8;
-            font-size: 12px;
-        }
-        & .danca-de-roda-imagem {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        & .circular-imagem {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-        }
     }
 }
