@@ -882,6 +882,10 @@ textarea:focus {
         border-radius: 15px;
         margin: 5px;
     }
+
+    .musica-sementes p{
+        text-align: right;
+    }
    
     .danca-de-roda-imagem figure {
         width: 100%;
