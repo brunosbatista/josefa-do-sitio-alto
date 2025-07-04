@@ -312,6 +312,10 @@ cite {
     width: 780px;
 }
 
+.musica-sementes p{
+    text-align: right;
+}
+
 .videos-youtube {
     background-color:  #F09E00;;
     text-align: center;
