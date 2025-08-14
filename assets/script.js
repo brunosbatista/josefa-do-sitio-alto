@@ -7,6 +7,17 @@ window.addEventListener("scroll", function() {
     }
 });
 
+// Pega o checkbox e todos os links do menu
+const menuToggle = document.getElementById("check");
+const menuLinks = document.querySelectorAll("nav a");
+
+// Quando clicar em qualquer link, desmarca o checkbox
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    menuToggle.checked = false;
+  });
+});
+
 function getDadosForms() {
     event.preventDefault()
     let nome = document.querySelector('#nome').value;
