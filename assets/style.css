@@ -553,6 +553,13 @@ textarea:focus {
     outline: none;
 }
 
+.erro {
+    color: red;
+    font-size: 7px;
+    display: block;
+    
+}
+
 /* Estilo do botão de enviar para WhatsApp */
 #whatsapp-button {
     display: inline-block;
