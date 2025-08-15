@@ -19,13 +19,41 @@ menuLinks.forEach(link => {
 });
 
 function getDadosForms() {
-    event.preventDefault()
-    let nome = document.querySelector('#nome').value;
-    let email = document.querySelector('#email').value;
-    let celular = document.querySelector('#telefone').value;
-    let mensagem = document.querySelector('#mensagem').value;
+   event.preventDefault();
 
-    conexaoApi(nome, email, celular, mensagem);
+    let campos = [
+        { elemento: document.querySelector('#nome'), nome: 'Nome' },
+        { elemento: document.querySelector('#email'), nome: 'Email' },
+        { elemento: document.querySelector('#telefone'), nome: 'Telefone' },
+        { elemento: document.querySelector('#mensagem'), nome: 'Mensagem' }
+    ];
+
+    let valido = true;
+
+    campos.forEach(campo => {
+        let erroEl = campo.elemento.nextElementSibling;
+        erroEl.textContent = ''; // limpa mensagens antigas
+
+        if (!campo.elemento.value.trim()) {
+            erroEl.textContent = `O campo ${campo.nome} é obrigatório.`;
+            valido = false;
+        }
+    });
+
+    if (valido) {
+        let nome = campos[0].elemento.value.trim();
+        let email = campos[1].elemento.value.trim();
+        let celular = campos[2].elemento.value.trim();
+        let mensagem = campos[3].elemento.value.trim();
+
+        conexaoApi(nome, email, celular, mensagem);
+
+        // Limpar campos e mensagens
+        campos.forEach(campo => {
+            campo.elemento.value = '';
+            campo.elemento.nextElementSibling.textContent = '';
+        });
+    }
     
 }
 
