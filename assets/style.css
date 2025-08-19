@@ -333,7 +333,10 @@ cite {
 
 .videos-youtube iframe {
     border-radius: 20px;
-    width: 260px;
+    width: 70%;
+    aspect-ratio: 16 / 9; /* mantém proporção no mobile */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    border: none;
 }
 
 .videos-youtube a {
@@ -897,6 +900,7 @@ textarea:focus {
   
     .videos-youtube iframe {
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .content-container-danca {
