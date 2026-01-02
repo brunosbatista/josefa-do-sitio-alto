@@ -116,7 +116,7 @@ p {
 }
 
 .logo img {
-    width: 150px;
+    width: 120px;
     
 }
 
@@ -167,6 +167,10 @@ p {
     position: relative;
     height: 80vh;
     overflow: hidden;
+}
+
+.logo-video {
+    width: 200px;
 }
 
 .video-bg {
