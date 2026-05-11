@@ -745,6 +745,258 @@ textarea:focus {
 
 
 
+/* ===== PATROCINADORES ===== */
+
+/* Barra Quilombo — topo, logo abaixo do header */
+.barra-quilombo {
+    background-color: #1a2e1a;
+    padding: 8px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 72px;
+    flex-wrap: wrap;
+}
+.barra-quilombo-label {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 11px;
+    color: #7db87d;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+.barra-quilombo-logos {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.barra-quilombo-logos a img {
+    height: 32px;
+    max-width: 120px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: opacity 0.3s;
+}
+.barra-quilombo-logos a img:hover { opacity: 1; }
+.barra-quilombo-vazio {
+    font-size: 11px;
+    color: #4a6e4a;
+}
+.barra-quilombo-vazio a { color: #7db87d; }
+
+/* Overlay Quilombo — sobre o vídeo hero */
+.video-patrocinadores-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-radius: 12px 0 0 0;
+}
+.overlay-label {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.08em;
+}
+.overlay-logos {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.overlay-logos a img {
+    height: 28px;
+    max-width: 100px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+.overlay-logos a img:hover { opacity: 1; }
+.overlay-vazio a { font-size: 11px; color: rgba(255,255,255,0.4); }
+
+/* Faixa Raiz — logo abaixo do hero */
+.faixa-raiz {
+    background-color: #f5f0e8;
+    border-top: 2px solid #BF3F02;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.faixa-raiz-label {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+.faixa-raiz-logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.faixa-raiz-logos a img {
+    height: 36px;
+    max-width: 130px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.faixa-raiz-logos a img:hover { opacity: 1; transform: scale(1.05); }
+.faixa-raiz-vazio { font-size: 11px; color: #bbb; }
+.faixa-raiz-vazio a { color: #BF3F02; }
+
+/* Seção Seja Patrocinador */
+.seja-patrocinador-section {
+    background-color: #faf6f0;
+    padding: 50px 20px;
+    border-top: 1px solid #f0e8d8;
+    border-bottom: 1px solid #f0e8d8;
+}
+.sp-titulo {
+    font-family: Tipassim, sans-serif;
+    font-size: 42px;
+    color: #572C21;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.sp-subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 36px;
+    font-size: 16px;
+}
+.sp-planos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sp-card {
+    background: #fff;
+    border: 1px solid #e8ddd0;
+    border-radius: 20px;
+    padding: 28px 22px;
+    flex: 1;
+    min-width: 240px;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.sp-card-destaque {
+    border: 2px solid #BF3F02;
+}
+.sp-badge-popular {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #BF3F02;
+    color: #fff;
+    font-size: 11px;
+    font-family: Bahnschrift, sans-serif;
+    padding: 4px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+.sp-card-topo { text-align: center; }
+.sp-icone { font-size: 30px; }
+.sp-nome {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 20px;
+    color: #572C21;
+    margin: 6px 0 2px;
+}
+.sp-publico { font-size: 12px; color: #888; margin-bottom: 12px; }
+.sp-preco {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
+.sp-preco span { font-size: 14px; color: #888; font-weight: normal; }
+.sp-desconto { font-size: 11px; color: #888; margin-top: 2px; }
+.sp-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+    line-height: 2;
+    flex: 1;
+}
+.sp-lista li strong { color: #333; }
+.sp-visib {
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Bahnschrift, sans-serif;
+    letter-spacing: 0.04em;
+}
+.sp-visib-semente { background: #f0ece6; color: #888; }
+.sp-visib-raiz { background: #fdf3e0; color: #BF3F02; }
+.sp-visib-quilombo { background: #1a2e1a; color: #7db87d; }
+.sp-btn {
+    display: block;
+    background: #572C21;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.sp-btn:hover { background: #BF3F02; }
+.sp-btn-destaque { background: #BF3F02; }
+.sp-btn-destaque:hover { background: #993300; }
+
+/* Logos Semente no rodapé */
+.rodape-semente {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #444;
+}
+.rodape-semente-label {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 0.08em;
+    display: block;
+    margin-bottom: 10px;
+}
+.rodape-semente-logos {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rodape-semente-logos a img {
+    height: 28px;
+    max-width: 100px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+.rodape-semente-logos a img:hover { opacity: 1; }
+.rodape-semente-vazio a { font-size: 11px; color: #666; }
+
+/* ===== FIM PATROCINADORES ===== */
+
 /* FIM DO VISUAL NOVO*/
 /* Estilização geral da seção */
 
