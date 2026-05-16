@@ -63,8 +63,8 @@ function conexaoApi(nome, email, celular, mensagem) {
 
 function enviarMensagem(nome, email, celular, mensagem) {
 
-     const numeroWhatsApp = "5579999365635";
-     const texto = `Olá, meu nome é ${nome}.
+     const numeroWhatsApp = "5579999780408";
+     const texto = `Olá Mestra Josefa, meu nome é ${nome}.
         \nEmail: ${email}
         \nTelefone: ${celular}
         \nMensagem: ${mensagem}`;
